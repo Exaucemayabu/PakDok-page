@@ -5,14 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Télécharger — PakDok</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .security-warning {
+      background-color: #fff3cd;
+      color: #664d03;
+      border: 1px solid #ffeeba;
+      border-radius: 6px;
+      padding: 16px;
+      margin: 24px 0;
+      font-size: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .security-warning svg {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      color: #856404;
+      margin-top: 2px;
+    }
+  </style>
 </head>
+
 <body>
-    <header class="container header">
+  <header class="container header">
     <div class="logo">
-      <img src="assets/images/logo.png" alt="PakDok" style="height:36px"/>
+      <img src="assets/images/logo.png" alt="PakDok" style="height:36px" />
       <span>PakDok</span>
     </div>
     <nav class="nav">
+      <a href="index.html">Accueil</a>
       <a href="features.html">Fonctionnalités</a>
       <a href="about.html">À propos</a>
       <a href="support.html">Support</a>
@@ -20,57 +43,72 @@
       <a class="cta" href="download.html">Télécharger</a>
     </nav>
   </header>
- 
- 
 
   <main class="container">
     <section style="padding:36px 0">
       <h1>Télécharger PakDok (version bêta)</h1>
       <p style="color:var(--muted)">
-        Merci de téléchargé PakDok. Cette version est fournie telle quelle : <strong>pensez à sauvegarder vos documents régulièrement</strong>.
+        Merci de télécharger PakDok. Cette version est fournie telle quelle : 
+        <strong>pensez à sauvegarder vos documents régulièrement</strong>.
       </p>
 
+      <!-- 🔸 Message d’avertissement de sécurité -->
+      <div class="security-warning">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M7.938 2.016a.13.13 0 0 1 .124 0l6.857 3.939a.13.13 0 0 1 .063.11v7.87a.13.13 0 0 1-.063.11l-6.857 3.939a.13.13 0 0 1-.124 0L1.08 14.045a.13.13 0 0 1-.063-.11V6.065a.13.13 0 0 1 .063-.11L7.938 2.016zM8 4.067 2 7.196v5.607l6 3.129 6-3.129V7.196L8 4.067z"/>
+          <path d="M8 9.293a.5.5 0 0 1 .5.5v2.5a.5.5 0 0 1-1 0v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <circle cx="8" cy="7" r="0.5"/>
+        </svg>
+        <div>
+          <strong>⚠️ Avertissement de sécurité :</strong><br>
+          Si un message s’affiche indiquant que le fichier peut être dangereux, ne vous inquiétez pas — 
+          <strong>c’est normal</strong>.  
+          L’application PakDok n’est pas encore publiée sur le Google Play Store, 
+          mais elle est sûre à installer.  
+          Vous pouvez continuer l’installation en toute confiance.
+        </div>
+      </div>
+
       <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:20px">
-       <!-- Android APK -->
-<div style="flex:1;min-width:260px" class="card">
-  <h3>Android (APK)</h3>
-  <p style="color:var(--muted)">
-    Téléchargez et installez manuellement l'APK sur votre téléphone Android.  
-    Pour installer, suivez ces étapes :
-  </p>
- <ol style="color:var(--muted);margin-left:20px;margin-top:8px">
-  <li>Ouvrez l’application <strong>Paramètres</strong> de votre téléphone.</li>
-  <li>Dans la barre de recherche des paramètres, tapez <strong>“Installer des applications inconnues”</strong> ou <strong>“Sources inconnues”</strong>.</li>
-  <li>Sélectionnez ensuite le navigateur ou gestionnaire de fichiers que vous utilisez pour télécharger l’APK (ex. Chrome, Firefox, Fichiers).</li>
-  <li>Activez l’option <strong>Autoriser à partir de cette source</strong>.</li>
-  <li>Téléchargez l’APK en cliquant sur le bouton ci-dessous.</li>
-  <li>Ouvrez le fichier téléchargé pour lancer l’installation.</li>
-  <li>Une fois installé, vous pouvez ouvrir <strong>PakDok</strong> depuis votre téléphone.</li>
-</ol>
+        <!-- Android APK -->
+        <div style="flex:1;min-width:260px" class="card">
+          <h3>Android (APK)</h3>
+          <p style="color:var(--muted)">
+            Téléchargez et installez manuellement l'APK sur votre téléphone Android.  
+            Pour installer, suivez ces étapes :
+          </p>
+          <ol style="color:var(--muted);margin-left:20px;margin-top:8px">
+            <li>Ouvrez l’application <strong>Paramètres</strong> de votre téléphone.</li>
+            <li>Recherchez <strong>“Installer des applications inconnues”</strong> ou <strong>“Sources inconnues”</strong>.</li>
+            <li>Sélectionnez le navigateur ou gestionnaire de fichiers utilisé pour télécharger l’APK.</li>
+            <li>Activez l’option <strong>Autoriser à partir de cette source</strong>.</li>
+            <li>Téléchargez l’APK en cliquant ci-dessous.</li>
+            <li>Ouvrez le fichier téléchargé pour lancer l’installation.</li>
+            <li>Une fois installé, ouvrez <strong>PakDok</strong> depuis votre téléphone.</li>
+          </ol>
 
-  <a href="https://github.com/Exaucemayabu/PakDok/releases/download/v1.0.0/app-release.apk" 
-   class="btn" 
-   style="margin-top:12px">
-   Télécharger PakDoc v1
-</a>
-<br><br>
-<img src="https://img.shields.io/github/downloads/Exaucemayabu/PakDok/v1.0.0/app-release.apk?style=for-the-badge" 
-     alt="Téléchargements">
+          <a href="https://github.com/Exaucemayabu/PakDok/releases/download/v1.0.1/app-release.apk"    
 
+             class="btn" 
+             style="margin-top:12px">
+             Télécharger PakDok v2
+          </a>
+          <br><br>
+          <img src="https://img.shields.io/github/downloads/Exaucemayabu/PakDok/v1.0.1/app-release.apk?style=for-the-badge" 
+               alt="Téléchargements">
+        </div>
 
-</div>
-
-
-      <div class="card" style="margin-top:18px">
-        <h3>iOS et Store</h3>
-        <p style="color:var(--muted);max-width:600px">
-          La version iOS sera bientôt disponible via TestFlight.  
-          PakDok sera également prochainement téléchargeable sur le Google Play Store et l’App Store pour une installation facile.  
-          Nous vous tiendrons informés dès sa mise en ligne.
-        </p>
-        <p style="color:var(--muted);max-width:600px;margin-top:8px">
-          N’hésitez pas à nous envoyer vos suggestions ou remarques pour améliorer PakDok !
-        </p>
+        <div class="card" style="margin-top:18px">
+          <h3>iOS et Store</h3>
+          <p style="color:var(--muted);max-width:600px">
+            La version iOS sera bientôt disponible via TestFlight.  
+            PakDok sera également prochainement téléchargeable sur le Google Play Store et l’App Store.  
+            Nous vous informerons dès sa mise en ligne.
+          </p>
+          <p style="color:var(--muted);max-width:600px;margin-top:8px">
+            N’hésitez pas à nous envoyer vos suggestions pour améliorer PakDok !
+          </p>
+        </div>
       </div>
     </section>
   </main>
